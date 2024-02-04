@@ -1,6 +1,6 @@
-<script setup>
+<script setup lang="ts">
 import { TresCanvas, useRenderLoop } from '@tresjs/core';
-import { OrbitControls, Text3D, Reflector, MeshWobbleMaterial, Stars } from '@tresjs/cientos';
+import { OrbitControls, Text3D, Stars, MeshGlassMaterial } from '@tresjs/cientos';
 
 
 import {
@@ -35,6 +35,11 @@ onLoop(({ delta, elapsed }) => {
         );
     }
 });
+
+onMounted(() => {
+    
+});
+
 </script>
 
 <template>
@@ -45,26 +50,20 @@ onLoop(({ delta, elapsed }) => {
             shadows
             id="canvas"
         >
-            <TresPerspectiveCamera :args="[45, 1, 0.1, 1000]" />
+            <TresPerspectiveCamera :position="[3, 3, 3]" :look-at="[0, 0, 2]" />
             <OrbitControls />
             <Stars />
             <Suspense>
                 <TresMesh ref="torusRef">
-                    <MeshWobbleMaterial
-                        color="orange"
-                        :speed="1"
-                        :factor="2"
-                    />
                     <Text3D 
                         :font="fontPath"
                         :text="name"
-                        :options="fontOptions"
+                        :color="'red'"
                     />
-                    
                 </TresMesh>
             </Suspense>
-            <!-- <TresAmbientLight :intensity="1" /> -->
-            <!-- <TresGridHelper :size="10" :divisions="10" /> -->
+            <TresAmbientLight :color="0xffffff" :intensity="1" />
+            <TresHemisphereLight :color="0xff0000" :intensity="1" />
         </TresCanvas>
     </div>
 </template>
