@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     modules: [
         'nuxt-primevue',
         '@vueuse/nuxt',
+        '@nuxtjs/tailwindcss',
     ],
     devtools: { enabled: true },
     vite: {
