@@ -1,15 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { templateCompilerOptions } from '@tresjs/core';
 
 export default defineNuxtConfig({
     modules: [
-        'nuxt-primevue'
+        'nuxt-primevue',
+        '@vueuse/nuxt',
     ],
     devtools: { enabled: true },
     vite: {
-        vue: {
-            ...templateCompilerOptions
-        },
+        vue: {},
     },
     css: ['~/assets/css/main.css'],
     postcss: {

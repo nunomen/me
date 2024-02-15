@@ -1,14 +1,5 @@
 <script setup lang="ts">
-import { TresCanvas, useRenderLoop } from '@tresjs/core';
-import { OrbitControls, Text3D, Stars, MeshGlassMaterial } from '@tresjs/cientos';
 
-
-import {
-    shallowRef,
-} from 'vue';
-
-
-const { onLoop } = useRenderLoop();
 
 const props = defineProps({
     name: {
@@ -17,61 +8,35 @@ const props = defineProps({
     },
 });
 
-const torusRef = shallowRef();
 
-const fontPath = ref('https://raw.githubusercontent.com/Tresjs/assets/main/fonts/FiraCodeRegular.json');
-
-onLoop(({ delta, elapsed }) => {
-    if (torusRef.value) {
-        torusRef.value.rotation.x += delta * 1.2;
-        torusRef.value.rotation.y += delta * 1.4;
-
-        torusRef.value.position.y += 0.01 * Math.sin(elapsed * 2);
-
-        torusRef.value.scale.set(
-            0.1 * Math.sin(elapsed * 2),
-            0.1 * Math.sin(elapsed * 2),
-            0.1 * Math.sin(elapsed * 2),
-        );
-    }
-});
 
 onMounted(() => {
-    
+
 });
 
 </script>
 
 <template>
-    <div class="header">
-        <TresCanvas
-            ref="canvasRef"
-            clear-color="#111"
-            shadows
-            id="canvas"
-        >
-            <TresPerspectiveCamera :position="[3, 3, 3]" :look-at="[0, 0, 2]" />
-            <OrbitControls />
-            <Stars />
-            <Suspense>
-                <TresMesh ref="torusRef">
-                    <Text3D 
-                        :font="fontPath"
-                        :text="name"
-                        :color="'red'"
-                    />
-                </TresMesh>
-            </Suspense>
-            <TresAmbientLight :color="0xffffff" :intensity="1" />
-            <TresHemisphereLight :color="0xff0000" :intensity="1" />
-        </TresCanvas>
+    <div id="cookieBanner" class="fixed bottom-0 inset-x-0 mt-2 pb-2 sm:pb-5">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="p-2 rounded-lg bg-gray-800 shadow-lg sm:p-3">
+                <div class="flex items-center justify-between flex-wrap">
+                    <div class="w-0 flex-1 flex items-center">
+                        <span class="flex p-2 rounded-lg bg-gray-900">
+                            <!-- primevue icons -->
+                            🏠
+                            
+                        </span>
+                        <p class="ml-3 font-medium text-white truncate">
+                            <span class="hidden md:inline">
+                                Welcome to my home, I am Nuno, a full-stack developer.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
-<style scoped>
-.header {
-    height: 200px;
-    width: 100%;
-}
-
-</style>
+<style scoped></style>

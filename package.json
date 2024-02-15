@@ -21,8 +21,8 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@tresjs/cientos": "^3.7.0",
-    "@tresjs/core": "^3.6.0",
+    "@vueuse/nuxt": "^10.7.2",
+    "primeicons": "^6.0.1",
     "three": "^0.159.0",
     "vue": "^3.3.4"
   }
