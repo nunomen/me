@@ -13,6 +13,8 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@types/three": "^0.159.0",
+    "@vueuse/core": "^10.7.2",
+    "@vueuse/nuxt": "^10.7.2",
     "autoprefixer": "^10.4.17",
     "nuxt": "^3.8.2",
     "nuxt-primevue": "^0.2.2",
@@ -22,7 +24,6 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@vueuse/nuxt": "^10.7.2",
     "primeicons": "^6.0.1",
     "three": "^0.159.0",
     "vue": "^3.3.4"

@@ -1,21 +1,17 @@
-<script setup lang="ts">
+<script setup>
+import { useWindowScroll } from '@vueuse/core';
 
+const { y } = useWindowScroll();
 </script>
 
 <template>
-    <HeaderTitle 
-        id="header"
-        :name="'Nuno Mendes'"
-    />
-    <!-- <DynamicIsland>
-        <li><NuxtLink to="/">Home</NuxtLink></li>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/contact">Contact</NuxtLink></li>
-    </DynamicIsland> -->
-</template>
+    <div class="bg-slate-700 border-black">
+        <HeaderTitle 
+            id="header"
+            :name="'Nuno Mendes'"
+        />
 
-<style scoped>
-#header {
-    top: 0px;
-}
-</style>
+        <ScrollBarCircle :scroll="y"/>
+        <BodyText />
+    </div>
+</template>
