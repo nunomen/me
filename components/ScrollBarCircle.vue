@@ -1,10 +1,13 @@
 <script setup>
-defineProps({
+import { watch } from 'vue';
+
+const props = defineProps({
     scroll: {
         type: Number,
         default: 0,
     },
 });
+
 </script>
 
 <template>
