@@ -6,6 +6,9 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '@nuxtjs/tailwindcss',
     ],
+    experimental: {
+        payloadExtraction: true
+    }
     ssr: true,
     devtools: { enabled: false },
     vite: {
