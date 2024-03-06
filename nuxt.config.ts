@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     ],
     experimental: {
         payloadExtraction: true
-    }
+    },
     ssr: true,
     devtools: { enabled: false },
     vite: {
