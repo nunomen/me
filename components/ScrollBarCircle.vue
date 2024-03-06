@@ -8,6 +8,10 @@ const props = defineProps({
     },
 });
 
+watch(() => props.scroll, (scroll) => {
+    console.log(scroll);
+});
+
 </script>
 
 <template>
