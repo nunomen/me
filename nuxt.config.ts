@@ -7,8 +7,7 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
     ],
     app: {
-        baseURL: '/me/', 
-        // buildAssetsDir: 'assets',
+        baseURL: '/me/',
     },
     devtools: { enabled: true },
     vite: {
