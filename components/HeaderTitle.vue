@@ -23,7 +23,7 @@ const props = defineProps({
                         </span>
                         <p class="ml-3 font-medium text-white truncate">
                             <span class="hidden md:inline">
-                                Welcome to my page, I am Nuno, a Full Stack Developer!
+                                Welcome, I am Nuno, a Full Stack Developer!
                             </span>
                         </p>
                     </div>
