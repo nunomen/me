@@ -6,11 +6,11 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '@nuxtjs/tailwindcss',
     ],
-    experimental: {
-        payloadExtraction: true
+    app: {
+        baseURL: '/me/', 
+        // buildAssetsDir: 'assets',
     },
-    ssr: true,
-    devtools: { enabled: false },
+    devtools: { enabled: true },
     vite: {
         vue: {},
     },
