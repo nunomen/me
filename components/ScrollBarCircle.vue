@@ -1,17 +1,10 @@
 <script setup>
-import { watch } from 'vue';
-
 const props = defineProps({
     scroll: {
         type: Number,
         default: 0,
     },
 });
-
-watch(() => props.scroll, (scroll) => {
-    console.log(scroll);
-});
-
 </script>
 
 <template>
