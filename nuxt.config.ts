@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     ],
     app: {
         baseURL: '/me/',
+        cdnURL: 'https://littlebrat.github.io/me/'
     },
     devtools: { enabled: true },
     vite: {
