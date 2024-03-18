@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue';
+import { ref } from 'vue';
 import { useWindowScroll } from '@vueuse/core';
 
 const stars = ref([]);
@@ -36,7 +36,7 @@ const { y } = useWindowScroll();
         />
         <ScrollBarCircle :scroll="y"/>
         <div>
-            <BodyText />
+            <ArticleSection />
         </div>
     </div>
 
