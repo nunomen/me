@@ -4,7 +4,7 @@ import { defaultTitle, defaultBody } from './text';
 
 </script>
 <template>
-    <div class="max-w-md mx-auto bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div class="max-w-md mx-auto rounded-xl overflow-hidden md:max-w-2xl">
         <div class="md:flex">
             <div class="p-8">
                 <div class="uppercase tracking-wide text-sm text-indigo-400 font-semibold">Title</div>
