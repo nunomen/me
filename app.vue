@@ -1,8 +1,9 @@
 <script setup>
 import { ref, watch } from 'vue';
-import { useWindowScroll } from '@vueuse/core';
+import { useScroll } from '@vueuse/core';
 
 const stars = ref([]);
+const scrollableContentRef = ref(null);
 
 // Generate stars with random positions and animation properties
 function generateStars() {
@@ -25,7 +26,7 @@ function generateStars() {
 
 generateStars();
 
-const { y } = useWindowScroll();
+const { y } = useScroll(scrollableContentRef);
 
 watch(y, (oldY, newY) => {
   console.log(oldY, newY);
@@ -54,7 +55,7 @@ watch(y, (oldY, newY) => {
             :name="'Nuno Mendes'"
         />
         <ScrollBarCircle :scroll="y"/>
-        <div class="scrollable-content">
+        <div ref="scrollableContentRef">
             <BodyText />
         </div>
     </div>
