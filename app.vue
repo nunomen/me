@@ -6,7 +6,7 @@ const { y } = useWindowScroll();
 
 <template>
     <SpaceBackground>
-        <TypeWriter words="Welcome, I am Nuno, a Full Stack Developer!" />
+        <TypeWriter words="Hey 👋 I am Nuno, a Full Stack Developer!" />
 
         <ScrollBarCircle :scroll="y"/>
         <div>

@@ -1,46 +1,54 @@
 <template>
-    <div class="text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center text-white">
-        <template v-for="(item, index) in wordsArray" :key="index">
-            <span v-if="item === ' '" class="space" :style="{ 'animation-delay': `${index * 0.1}s` }">&nbsp;</span>
-            <span v-else :style="{ 'animation-delay': `${index * 0.1}s` }" class="character-animation text-white">
-                {{ item }}
-            </span>
-        </template>
-        <span class="cursor-animation bg-blue-500"></span>
+    <div class="text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center text-white flex justify-center">
+        <div class="inline-block">
+            <span v-for="(char, index) in animatedChars" :key="index" class="inline-block typewriter-text"
+                v-html="char === ' ' ? '&nbsp;' : char"></span>
+            <span class="cursor"></span>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 
 const props = defineProps({
     words: String,
 });
 
-const wordsArray = ref([...props.words]);
+const fullText = ref(props.words);
+const animatedChars = ref([]);
+
+onMounted(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+        if (i < fullText.value.length) {
+            // Directly pushing the character into the array
+            animatedChars.value.push(fullText.value[i] === ' ' ? '&nbsp;' : fullText.value[i]);
+            i++;
+        } else {
+            clearInterval(interval);
+        }
+    }, 100);
+});
 </script>
 
 <style scoped>
-.character-animation {
-    display: inline-block;
+.typewriter-text {
     opacity: 0;
-    transform: translateY(-100%);
-    animation: slideIn 0.6s forwards;
+    animation: fadeIn 0.05s forwards;
 }
 
-@keyframes slideIn {
+@keyframes fadeIn {
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
-.cursor-animation {
+.cursor {
     display: inline-block;
     background-color: blue;
     width: 4px;
     height: 1em;
-    margin-left: 5px;
     animation: blink 1s step-start infinite;
 }
 
