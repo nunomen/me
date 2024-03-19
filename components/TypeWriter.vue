@@ -19,16 +19,17 @@ const fullText = ref(props.words);
 const animatedChars = ref([]);
 
 onMounted(() => {
+    const chars = Array.from(fullText.value);
+    const timeInterval = 50;
     let i = 0;
     const interval = setInterval(() => {
-        if (i < fullText.value.length) {
-            // Directly pushing the character into the array
-            animatedChars.value.push(fullText.value[i] === ' ' ? '&nbsp;' : fullText.value[i]);
+        if (i < chars.length) {
+            animatedChars.value.push(chars[i] === ' ' ? '&nbsp;' : chars[i]);
             i++;
         } else {
             clearInterval(interval);
         }
-    }, 100);
+    }, timeInterval);
 });
 </script>
 
