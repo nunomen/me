@@ -5,7 +5,13 @@ export default defineNuxtConfig({
         'nuxt-primevue',
         '@vueuse/nuxt',
         '@nuxtjs/tailwindcss',
+        '@tresjs/nuxt',
+        '@nuxt/devtools',
     ],
+    tres: {
+        glsl: true,
+    },
+    pages: false,
     app: {
         baseURL: '/me/',
     },
@@ -16,8 +22,8 @@ export default defineNuxtConfig({
     css: ['~/assets/css/main.css'],
     postcss: {
         plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
+            tailwindcss: {},
+            autoprefixer: {},
         },
     },
 });
