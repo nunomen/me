@@ -10,17 +10,22 @@ function generateStars() {
         const y = -10 + 'vh'; // Start above the viewport to make the effect continuous
         const yEnd = Math.random() * 100 + 120 + 'vh'; // Ensure stars move downwards
         const animationDuration = 2 + Math.random() * 3 + 's'; // Each star falls at its own pace
-        const animationDelay = Math.random() * 5 + 's'; // Start at different times for continuous effect
+        const animationDelay = Math.random() * 5 + 's'; // Start at different times for a continuous effect
+        const color = `hsl(${Math.random() * 360}, 100%, 75%)`; // Generate a random hue with full saturation and lightness at 75%
+        const size = 2 + Math.random() * 3 + 'px'; // Random size between 2px and 5px
         stars.value.push({
             id: i,
             x: x,
             y: y,
             yEnd: yEnd,
             animationDuration: animationDuration,
-            animationDelay: animationDelay
+            animationDelay: animationDelay,
+            color: color,
+            size: size
         });
     }
 }
+
 
 onMounted(generateStars);
 </script>
@@ -36,6 +41,9 @@ onMounted(generateStars);
             '--yEnd': star.yEnd,
             'animation-duration': star.animationDuration,
             'animation-delay': star.animationDelay,
+            'background-color': star.color,
+            'width': star.size,
+            'height': star.size,
         }" />
     </div>
 </template>
