@@ -1,8 +1,8 @@
 <template>
     <div id="sticky-banner" tabindex="-1"
-        class="fixed top-0 start-0 z-50 flex justify-between w-full p-4 border-b border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+        class="fixed top-0 start-0 z-50 flex justify-between w-full p-4 dark:bg-gray-700 dark:border-gray-600 bg-violet-800">
         <div class="flex items-center mx-auto">
-            <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
+            <p class="flex items-center text-sm font-normal dark:text-gray-400 text-white">
                 <span
                     class="inline-flex p-1 me-3 bg-gray-200 rounded-full dark:bg-gray-600 w-6 h-6 items-center justify-center flex-shrink-0">
                     🚜
