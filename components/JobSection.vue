@@ -27,7 +27,6 @@ defineProps({
     },
 });
 
-// Computed property to handle date formatting, enhanced with TypeScript
 const formatDate = (date: string): string => {
     console
     if (date === null) return 'Present';

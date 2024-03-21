@@ -3,7 +3,6 @@ export const job = {
     company: "CERN",
     role: "Converter Controls Software",
     startDate: "2021-05-01",
-    endDate: "Present",
     location: "Geneva, Switzerland",
     url: "https://cern.ch/ccs-tools",
     tasks: [
@@ -15,7 +14,7 @@ export const job = {
         {
             title: "Architectural Designer of 'FGC-API'",
             description: "Designed and developed a unified web interface specification that integrates a REST API and a websocket service for real-time access, updates, and control over Power Converter resources, with server support for both OAuth2 and RBAC tokens.",
-            technologies: ["Python", "FastAPI", "PyJWT"]
+            technologies: ["Python", "FastAPI", "PyJWT", "SQLAlchemy"]
         },
         {
             title: "Owner of Containerisation and Orchestration project",

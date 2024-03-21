@@ -11,7 +11,7 @@ const { y } = useWindowScroll();
         <TypeWriter words="Hey 👋 I'm Nuno, a Full Stack Developer!" />
         <!-- <PersonalAvatar /> -->
         <ScrollBarCircle :scroll="y"/>
-        <div class="mt-5">
+        <div class="mt-8">
             <JobSection :="job"/>
         </div>
     </SpaceBackground>
