@@ -20,7 +20,11 @@ defineProps({
         optional: true,
     },
     location: String,
-    url: String,
+    url: {
+        type: String,
+        default: null,
+        optional: true,
+    },
     tasks: {
         type: Array as PropType<Task[]>,
         default: () => [],
@@ -42,7 +46,7 @@ const formatDate = (date: string): string => {
         <h3 class="text-lg text-purple-500">{{ company }} - {{ role }}</h3>
         <p class="text-sm text-gray-400"><strong>{{ formatDate(startDate) }} - {{ formatDate(endDate) }}</strong></p>
         <p class="text-sm text-gray-400">{{ location }}</p>
-        <a :href="url" target="_blank"
+        <a v-if="url" :href="url" target="_blank"
             class="text-purple-300 hover:text-purple-400 transition duration-300 ease-in-out">{{ url }}</a>
         <div class="space-y-2">
             <div v-for="(task, index) in tasks" :key="index" class="pt-4">

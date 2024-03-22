@@ -1,6 +1,6 @@
 <script setup>
 import { useWindowScroll } from '@vueuse/core';
-import { job } from './components/jobs.js';
+import { jobs } from './components/jobs.js';
 
 const { y } = useWindowScroll();
 </script>
@@ -12,7 +12,10 @@ const { y } = useWindowScroll();
         <!-- <PersonalAvatar /> -->
         <ScrollBarCircle :scroll="y"/>
         <div class="mt-8">
-            <JobSection :="job"/>
+            <JobSection
+                v-for="job in jobs" 
+                :="job"
+            />
         </div>
     </SpaceBackground>
 </template>
