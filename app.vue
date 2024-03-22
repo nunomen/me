@@ -1,6 +1,7 @@
 <script setup>
 import { useWindowScroll } from '@vueuse/core';
 import { jobs } from './components/jobs.js';
+import { projects } from './components/projects.js';
 
 const { y } = useWindowScroll();
 </script>
@@ -15,6 +16,10 @@ const { y } = useWindowScroll();
             <JobSection
                 v-for="job in jobs" 
                 :="job"
+            />
+            <ProjectSection
+                v-for="project in projects"
+                :="project"
             />
         </div>
     </SpaceBackground>
