@@ -60,5 +60,37 @@ export const jobs = [
                 technologies: ["Python", "TCP/IP", "UDP", "Serial", "GPIB", "Multithreading"]
             }
         ]
+    },
+    {
+        title: "AI Research Internship",
+        company: "Carnegie Mellon University",
+        role: "Software Developer",
+        startDate: "2017-01-01",
+        endDate: "2017-03-31",
+        location: "Pittsburgh, USA",
+        tasks: [
+            {
+                title: "",
+                description: "Research Project into Short-Sighted Probabilistic Planning",
+                technologies: ["Python", "C++"]
+            }
+        ]
+    },
+    {
+        title: "Software Engineer - Summer Internship",
+        company: "Multicert",
+        role: "Software Developer",
+        startDate: "2015-08-01",
+        endDate: "2015-09-30",
+        location: "Porto Salvo, Portugal",
+        url: "",
+        tasks: [
+            {
+                title: "",
+                description: "Browser fingerprinting and tracking prevention research project.",
+                technologies: ["Python", "Scipy", "MongoDB"]
+            }
+        ]
     }
+    
 ];
