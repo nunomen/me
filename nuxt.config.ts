@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     tres: {
         glsl: true,
     },
-    pages: false,
     app: {
         baseURL: '/me/',
     },

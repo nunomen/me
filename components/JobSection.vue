@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, type PropType } from 'vue';
+import { type PropType } from 'vue';
 
 // Update the structure of each task to include a title
 interface Task {
