@@ -8,10 +8,13 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="fixed inset-0 w-full h-full overflow-hidden z-10">
-        <div 
-        :class="`absolute top-1/4 left-[-15%] w-[30vw] h-[30vw] rounded-full bg-cover bg-center transform`"
-        :style="{ 'background-image': `url('earth.svg')`, transform: `rotate(${scroll}deg)` }"
-        ></div>
+    <div class="relative z-0">
+        <!-- Fixed Rotating Earth Component -->
+        <div class="fixed top-1/4 left-0 z-1 w-[30vw] h-[30vw] rounded-full bg-cover bg-center"
+            :style="{ 
+                'background-image': `url('earth.svg')`,
+                transform: `translateX(-50%) rotate(${scroll}deg)` 
+            }">
+        </div>
     </div>
 </template>
