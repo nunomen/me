@@ -81,7 +81,6 @@ onMounted(generateStars);
 }
 
 .content {
-    padding-top: 10vh;
     position: relative;
     z-index: 2;
 }

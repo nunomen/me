@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
-
-// Define explicit props
 defineProps({
     title: {
         type: String,
