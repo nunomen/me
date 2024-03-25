@@ -10,7 +10,7 @@ export const jobs = [
             {
                 title: "Lead Developer for 'FGC Commander'",
                 description: "Designed and developed an essential web application for Power Converter experts at CERN, offering comprehensive monitoring and control over Power Converters within the accelerator complex.",
-                technologies: ["Python", "FastAPI", "OAuth2", "HTML5", "CSS3", "Vue.js", "Vuex", "Pinia", "Vue Router", "Vite", "i18n", "Bootstrap", "Vitest", "Cypress"]
+                technologies: ["Python", "FastAPI", "OAuth2", "HTML5", "CSS3", "Vue.js", "Vuex", "Pinia", "Vue Router", "Vite", "i18n", "Bootstrap", "Vitest", "Cypress", "Figma"]
             },
             {
                 title: "Architectural Designer of 'FGC-API'",
