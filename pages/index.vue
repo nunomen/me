@@ -16,7 +16,7 @@
         </p>
 
         <p class="text-lg text-white pb-3">
-            I have a passion for building beautiful and functional web applications.
+            I have a passion for building accessible and beautiful web applications.
         </p>
 
         <p class="text-lg text-white pb-3">
