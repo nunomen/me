@@ -19,6 +19,11 @@ defineProps({
         default: null,
         optional: true,
     },
+    imageUrl: {
+        type: String,
+        default: null,
+        optional: true,
+    },
     location: String,
     url: {
         type: String,
@@ -42,12 +47,19 @@ const formatDate = (date: string): string => {
 
 <template>
     <div class="max-w-xl mx-auto bg-opacity-80 shadow-lg rounded-xl p-6 mb-4 space-y-4 bg-gray-900">
-        <h2 class="text-xl font-semibold text-purple-600">{{ title }}</h2>
-        <h3 class="text-lg text-purple-500">{{ company }} - {{ role }}</h3>
-        <p class="text-sm text-gray-400"><strong>{{ formatDate(startDate) }} - {{ formatDate(endDate) }}</strong></p>
-        <p class="text-sm text-gray-400">{{ location }}</p>
-        <a v-if="url" :href="url" target="_blank"
-            class="text-purple-300 hover:text-purple-400 transition duration-300 ease-in-out">{{ url }}</a>
+        <div class="flex flex-row justify-between">
+            <div class="flex flex-col gap-2">
+                <h2 class="text-xl font-semibold text-purple-600">{{ title }}</h2>
+                <h3 class="text-lg text-purple-500">{{ company }} - {{ role }}</h3>
+                <p class="text-sm text-gray-400"><strong>{{ formatDate(startDate) }} -
+                        {{ formatDate(endDate) }}</strong>
+                </p>
+                <p class="text-sm text-gray-400">{{ location }}</p>
+                <a v-if="url" :href="url" target="_blank"
+                    class="text-purple-300 hover:text-purple-400 transition duration-300 ease-in-out">{{ url }}</a>
+            </div>
+            <img v-if="imageUrl" :src="imageUrl" alt="Company Logo" class="bg-white w-20 h-20 rounded-full object-cover self-center">
+        </div>
         <div class="space-y-2">
             <div v-for="(task, index) in tasks" :key="index" class="pt-4">
                 <h4 class="text-lg font-medium text-white">{{ task.title }}</h4>
@@ -62,4 +74,3 @@ const formatDate = (date: string): string => {
         </div>
     </div>
 </template>
-

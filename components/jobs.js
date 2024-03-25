@@ -6,6 +6,7 @@ export const jobs = [
         startDate: "2021-05-01",
         location: "Geneva, Switzerland",
         url: "https://cern.ch/ccs-tools",
+        imageUrl: "cern_logo.png",
         tasks: [
             {
                 title: "Lead Developer for 'FGC Commander'",
@@ -42,6 +43,7 @@ export const jobs = [
         endDate: "2021-04-30",
         location: "Geneva, Switzerland",
         url: "https://cern.ch/ccs-tools",
+        imageUrl: "cern_logo.png",
         tasks: [
             {
                 title: "Lead Developer of 'FortLogs'",
@@ -68,6 +70,7 @@ export const jobs = [
         startDate: "2017-01-01",
         endDate: "2017-03-31",
         location: "Pittsburgh, USA",
+        imageUrl: "cmu_logo.png",
         tasks: [
             {
                 title: "",
@@ -83,7 +86,7 @@ export const jobs = [
         startDate: "2015-08-01",
         endDate: "2015-09-30",
         location: "Porto Salvo, Portugal",
-        url: "",
+        imageUrl: "multicert_logo.png",
         tasks: [
             {
                 title: "",
