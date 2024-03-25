@@ -6,7 +6,8 @@
 
         <div class="flex justify-center py-3">
             <div class="w-64 h-64 rounded-full overflow-hidden shadow-lg">
-                <img src="/me_photo.jpeg" alt="Nuno Mendes" style="object-position: 5% center;" class="object-cover w-full h-full">
+                <img src="/me_photo.jpeg" alt="Nuno Mendes" style="object-position: 5% center;"
+                    class="object-cover w-full h-full">
             </div>
         </div>
 
@@ -53,17 +54,17 @@
 
 
         <p class="text-lg pb-3">
-            <a href="/jobs"
+            <NuxtLink to="/jobs"
                 class="text-pink-500 hover:text-pink-600 hover:underline shadow hover:shadow-md transform hover:-translate-y-1 transition duration-300 ease-in-out">
                 View my work experience.
-            </a>
+            </NuxtLink>
         </p>
 
         <p class="text-lg pb-3">
-            <a href="/projects"
+            <NuxtLink to="/projects"
                 class="text-green-500 hover:text-green-600 hover:underline shadow hover:shadow-md transform hover:-translate-y-1 transition duration-300 ease-in-out">
                 Check out some of my projects.
-            </a>
+            </NuxtLink>
         </p>
     </div>
 </template>
