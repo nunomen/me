@@ -11,8 +11,6 @@
             </div>
         </div>
 
-
-
         <p class="text-lg text-white pb-3">
             I love to build things with code. I have a passion for
             building beautiful and functional web applications.
@@ -20,7 +18,7 @@
         </p>
         <p class="text-lg text-white pb-3">
             I have experience with a variety of technologies, including
-            <span class="text-yellow-500 hover:text-blue-700 transition duration-300 ease-in-out">JavaScript</span>,
+            <span class="text-yellow-500 hover:text-yellow-700 transition duration-300 ease-in-out">JavaScript</span>,
             <span class="text-green-500 hover:text-green-700 transition duration-300 ease-in-out">Vue.js</span>,
             <span class="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out">Python</span>,
             <span class="text-purple-500 hover:text-purple-700 transition duration-300 ease-in-out">PostgreSQL</span>,
@@ -52,19 +50,16 @@
             </ul>
         </div>
 
-
-        <p class="text-lg pb-3">
+        <div class="flex justify-center items-center flex-col gap-3">
             <NuxtLink to="/jobs"
-                class="text-pink-500 hover:text-pink-600 hover:underline shadow hover:shadow-md transform hover:-translate-y-1 transition duration-300 ease-in-out">
-                View my work experience.
+                class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded transform hover:-translate-y-1 transition duration-300 ease-in-out shadow hover:shadow-md">
+                View my work experience
             </NuxtLink>
-        </p>
 
-        <p class="text-lg pb-3">
             <NuxtLink to="/projects"
-                class="text-green-500 hover:text-green-600 hover:underline shadow hover:shadow-md transform hover:-translate-y-1 transition duration-300 ease-in-out">
-                Check out some of my projects.
+                class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transform hover:-translate-y-1 transition duration-300 ease-in-out shadow hover:shadow-md">
+                Check out some of my projects
             </NuxtLink>
-        </p>
+        </div>
     </div>
 </template>
