@@ -21,6 +21,8 @@ defineProps({
         required: true,
     },
 });
+
+const config = useRuntimeConfig()
 </script>
 
 <template>
@@ -31,7 +33,7 @@ defineProps({
             <iframe class="absolute top-0 left-0 w-full h-full" :src="mediaLink" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div v-else-if="mediaType === 'image'" class="w-full">
-            <img class="w-full h-auto" :src="mediaLink" :alt="title" />
+            <img class="w-full h-auto" :src="config.app.baseURL+mediaLink" :alt="title" />
         </div>
         <div class="flex flex-wrap gap-2 mt-2">
             <span v-for="(technology, index) in technologies" :key="index"

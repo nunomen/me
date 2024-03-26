@@ -36,6 +36,8 @@ defineProps({
     },
 });
 
+const config = useRuntimeConfig()
+
 const formatDate = (date: string): string => {
     console
     if (date === null) return 'Present';
@@ -58,7 +60,7 @@ const formatDate = (date: string): string => {
                 <a v-if="url" :href="url" target="_blank"
                     class="text-purple-300 hover:text-purple-400 transition duration-300 ease-in-out">{{ url }}</a>
             </div>
-            <img v-if="imageUrl" :src="imageUrl" alt="Company Logo" class="bg-white w-20 h-20 rounded-full object-cover self-center">
+            <img v-if="imageUrl" :src="config.app.baseURL+imageUrl" alt="Company Logo" class="bg-white w-20 h-20 rounded-full object-cover self-center">
         </div>
         <div class="space-y-2">
             <div v-for="(task, index) in tasks" :key="index" class="pt-4">
