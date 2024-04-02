@@ -18,7 +18,10 @@ export default defineNuxtConfig({
     vite: {
         vue: {},
     },
-    css: ['~/assets/css/main.css'],
+    css: [
+        '~/assets/css/main.css',
+        '@fortawesome/fontawesome-svg-core/styles.css'
+    ],
     postcss: {
         plugins: {
             tailwindcss: {},

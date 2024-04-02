@@ -24,6 +24,8 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
     "@tresjs/cientos": "^3.8.0",
     "@tresjs/core": "^3.7.0",
     "@tresjs/nuxt": "^2.1.1",

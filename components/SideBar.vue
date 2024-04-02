@@ -7,7 +7,7 @@
             </a>
             <button @click="toggleCollapse"
                 class="absolute border border-purple-700 bg-[#2C2C3C] w-8 h-8 mt-2 rounded-md flex justify-center items-center right-[-1rem] transform">
-                <!-- SVG for expand/collapse -->
+                <font-awesome-icon :icon="isCollapsed ? 'fa-solid fa-chevron-right' : 'fa-solid fa-chevron-left'" />
             </button>
         </div>
         <div class="p-4">

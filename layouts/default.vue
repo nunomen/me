@@ -5,7 +5,7 @@ const { y } = useWindowScroll();
 </script>
 
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-0">
+    <div class="grid grid-cols-[auto_1fr] gap-0">
         <SideBar />
         <SpaceBackground>
             <TypeWriter
