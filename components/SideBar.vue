@@ -18,8 +18,8 @@
                     class="text-gray-300 flex flex-row justify-center">
                     <NuxtLink :to="item.link" :title="item.title"
                         class="inline-flex items-center gap-3 py-2 px-4 rounded-md hover:bg-purple-700 hover:text-white w-full justify-center md:justify-start">
-                        <font-awesome-icon :icon="item.icon" class="w-8 h-8" /> <!-- Adjusted width and height -->
-                        <span v-show="!isCollapsed" class="text-sm">{{ item.title }}</span>
+                        <font-awesome-icon :icon="item.icon" class="w-8 h-8 py-2" size="lg" />
+                        <span v-show="!isCollapsed" class="font-medium text-sm">{{ item.title }}</span>
                     </NuxtLink>
                 </li>
             </ul>
@@ -36,7 +36,7 @@ const sections = [
         title: 'Main',
         items: [
             { link: '/jobs', title: 'Jobs', icon: 'fa-solid fa-briefcase' },
-            { link: '/projects', title: 'Projects', icon: 'fa-solid fa-project-diagram' },
+            { link: '/projects', title: 'Projects', icon: 'fa-solid fa-tasks' },
         ],
     },
     {
