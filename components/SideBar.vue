@@ -1,5 +1,5 @@
 <template>
-    <nav class="sticky top-0 left-0 h-screen flex flex-col bg-[#1E1E2F] text-white" :class="{'max-w-[80px]': isCollapsed, 'w-[18rem]': !isCollapsed}">
+    <nav class="sticky top-0 left-0 z-20 h-screen flex flex-col bg-[#1E1E2F] text-white" :class="{'max-w-[80px]': isCollapsed, 'w-[18rem]': !isCollapsed}">
       <div class="flex justify-between items-center px-4 py-2">
         <a href="#" class="flex items-center gap-2">
           <span class="text-purple-300 font-bold" v-show="!isCollapsed">Storeify</span>
@@ -12,7 +12,7 @@
         <input type="search" placeholder="Search for anything..." class="bg-[#2C2C3C] h-10 w-full rounded-md pl-4 pr-10 text-gray-300 placeholder-gray-500 outline-none border-none">
         <!-- Include search icon SVG positioned absolutely within the input -->
       </div>
-      <div v-for="(section, index) in sections" :key="index" class="mt-4 px-4">
+      <div v-for="(section, index) in sections" :key="index" class="pt-4 px-4">
         <h2 class="text-gray-400 text-sm font-medium mb-2" v-show="!isCollapsed">{{ section.title }}</h2>
         <ul class="space-y-1">
           <li v-for="item in section.items" :key="item.href" class="text-gray-300">
