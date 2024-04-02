@@ -1,5 +1,5 @@
 <template>
-    <nav class="sticky v-screen top-0 left-0 z-20 flex flex-col bg-[#1E1E2F] text-white"
+    <nav class="sticky v-screen h-screen top-0 left-0 z-20 flex flex-col bg-[#1E1E2F] text-white"
         :class="{ 'max-w-[80px]': isCollapsed, 'w-[18rem]': !isCollapsed }">
         <div class="flex justify-between items-center px-4 mt-2 relative">
             <a href="#" class="flex items-center gap-2">
