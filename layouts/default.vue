@@ -6,6 +6,7 @@ const { y } = useWindowScroll();
 
 <template>
     <SpaceBackground>
+        <SideBar />
         <TypeWriter 
             words="Hey 👋 I'm Nuno, a Full Stack Developer!"
             class="pt-6"
