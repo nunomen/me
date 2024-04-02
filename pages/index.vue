@@ -83,7 +83,6 @@
                 </svg>
             </a>
             <!-- Email -->
-            <!-- Email -->
             <a href="mailto:nuno.men@outlook.com" target="_blank" rel="noopener noreferrer" class="group">
                 <svg class="w-8 h-8 text-gray-300 group-hover:text-white transition duration-300 ease-in-out"
                     fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
