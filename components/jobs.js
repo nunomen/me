@@ -1,5 +1,15 @@
 export const jobs = [
     {
+        title: "Senior Full Stack Engineer",
+        company: "Breitling",
+        role: "Web Commerce",
+        startDate: "2024-04-01",
+        location: "Grenchen, Switzerland",
+        url: "https://breitling.com",
+        imageUrl: "breitling.png",
+        tasks: []
+    },
+    {
         title: "Senior Software Engineer",
         company: "CERN",
         role: "Converter Controls Software",
