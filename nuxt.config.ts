@@ -11,9 +11,9 @@ export default defineNuxtConfig({
     tres: {
         glsl: true,
     },
-    app: {
-        baseURL: '/me/',
-    },
+    // app: {
+    //     baseURL: '/me/',
+    // },
     devtools: { enabled: true },
     vite: {
         vue: {},
