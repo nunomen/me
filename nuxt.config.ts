@@ -11,9 +11,11 @@ export default defineNuxtConfig({
     tres: {
         glsl: true,
     },
-    // app: {
-    //     baseURL: '/me/',
-    // },
+    nitro: {
+        prerender: {
+            autoSubfolderIndex: false
+        }
+    },
     devtools: { enabled: true },
     vite: {
         vue: {},
