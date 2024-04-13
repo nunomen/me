@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: "Hexapod Robot",
-        description: "Lead a team of 10 people to build a Hexapod robot, from scratch, while having an active role in its software and hardware design. Won 3D printer at Lisbon Maker Faire.",
+        description: "Lead a team of 10 people to build a Hexapod robot, from scratch, while having an active role in its software and hardware design. Won a 3D printer at Lisbon Maker Faire.",
         technologies: ["Python", "C++", "Arduino", "CAD Design", "3D Printing", "PCB Design"],
         mediaType: 'video',
         mediaLink: "https://www.youtube.com/embed/Opzd3Esc2lg?si=PV5cbRKgG44O8Am9"
@@ -15,7 +15,7 @@ export const projects = [
     },
     {
         title: "Notifly",
-        description: "Designed and produced hardware gadget that connects to your computer and inteligently displays a colored light for others to see if you are busy or available based on what applications you are using at the moment.",
+        description: "Designed and produced a hardware gadget that connects to your computer and intelligently displays a colored light for others to see if you are busy or available based on what applications you are using at the moment.",
         technologies: ["C++", "Python", "PCB Design"],
         mediaType: 'video',
         mediaLink: "https://www.youtube.com/embed/gav6NS2pGRc?si=zm5mLdqwc6xQaSd-"
