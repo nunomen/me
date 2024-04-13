@@ -36,7 +36,7 @@
 
         <div class="pb-3">
             <p class="text-white text-lg pb-2">
-                Some of the highlights of my work include:
+                Some of the highlights of my career include:
             </p>
 
             <ul class="list-disc list-inside gap-2">
