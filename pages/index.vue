@@ -11,46 +11,50 @@
             </div>
         </div>
 
-        <p class="text-lg text-white pb-3">
-            I am software engineer from Portugal 🇵🇹 and currently live in Nyon, Switzerland. 🇨🇭
-        </p>
+        <div class="text-lg text-white pb-3 flex justify-center flex-col gap-5">
+            <p>👨🏼‍💻 Full Stack Software Engineer</p>
 
-        <p class="text-lg text-white pb-3">
-            I have a passion for building accessible and beautiful web applications.
-        </p>
+            <p>💻 Passionate about building beautiful web applications</p>
 
-        <p class="text-lg text-white pb-3">
-            I have experience with a variety of technologies, including
-            <span class="text-yellow-500 hover:text-yellow-700 transition duration-300 ease-in-out">JavaScript</span>,
-            <span class="text-green-500 hover:text-green-700 transition duration-300 ease-in-out">Vue.js</span>,
-            <span class="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out">Python</span>,
-            <span class="text-purple-500 hover:text-purple-700 transition duration-300 ease-in-out">PostgreSQL</span>,
-            and much more. I'm always looking to learn new things and improve my skills.
-        </p>
+            <p>🌍 From Lisbon, Portugal 🇵🇹</p>
 
-        <p class="text-lg text-white pb-3">
-            I currently work at <span
-                class="text-yellow-500 hover:text-yellow-300 transition duration-300 ease-in-out">Breitling</span> as a
-            Senior full-stack developer.
-        </p>
+            <p>🏠 Living in Nyon, Switzerland 🇨🇭</p>
+
+            <p>💼 Currently Senior Full Developer at <span
+                    class="text-yellow-500 hover:text-yellow-300 transition duration-300 ease-in-out">Breitling</span>
+                ⏱️</p>
+
+            <p>🤹🏼 Proficient in:</p>
+
+            <div class="bg-black rounded-md p-3 ms-2">
+                <span
+                    class="text-yellow-500 hover:text-yellow-700 transition duration-300 ease-in-out">JavaScript</span>,
+                <span class="text-green-500 hover:text-green-700 transition duration-300 ease-in-out">Vue.js</span>,
+                <span class="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out">Python</span>,
+                <span
+                    class="text-purple-500 hover:text-purple-700 transition duration-300 ease-in-out">PostgreSQL</span>,
+                and <span class="text-pink-500 hover:text-pink-700 transition duration-300 ease-in-out">much
+                    more</span>! I'm always looking to learn new things and improve my skills.
+            </div>
+        </div>
 
         <div class="pb-3">
-            <p class="text-white text-lg pb-2">
-                Some of the highlights of my career include:
+            <p class="text-white text-lg pb-3">
+                ⭐️ Some of the highlights of my career include:
             </p>
 
-            <ul class="list-disc list-inside gap-2">
-                <li
-                    class="pb-2 pl-5 text-white text-opacity-90 hover:text-opacity-100 transition duration-300 ease-in-out transform hover:scale-105">
+            <div class="gap-5 flex flex-col">
+                <div
+                    class="bg-gray-300 rounded-md mx-3 p-2 text-center text-black text-opacity-70 hover:text-opacity-100 transition duration-300 ease-in-out transform hover:scale-105">
                     Creating a full-stack application to monitor and control thousands of Power Converters at CERN,
                     leveraging interactive data visualization to enhance operational efficiency and user experience.
-                </li>
-                <li
-                    class="pb-2 pl-5 text-white text-opacity-90 hover:text-opacity-100 transition duration-300 ease-in-out transform hover:scale-105">
+                </div>
+                <div
+                    class="bg-gray-300 rounded-md mx-3 p-2 text-center text-black text-opacity-70 hover:text-opacity-100 transition duration-300 ease-in-out transform hover:scale-105">
                     Creating a data storage engine for Power Converters at CERN, allowing for real-time data analysis or
                     historical data retrieval.
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
 
         <div class="flex justify-center items-center flex-col gap-3">

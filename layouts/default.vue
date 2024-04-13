@@ -9,7 +9,7 @@ const { y } = useWindowScroll();
         <SideBar />
         <SpaceBackground>
             <TypeWriter
-                words="Hey 👋 I'm Nuno, a Full Stack Developer!"
+                words="Hey  👋  I'm Nuno!"
                 class="pt-6"
             />
             <!-- <PersonalAvatar /> -->
