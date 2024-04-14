@@ -44,13 +44,15 @@
             </p>
 
             <div class="gap-5 flex flex-col">
-                <div
-                    class="border-2 border-yellow-600 bg-yellow-300 rounded-md mx-3 p-2 text-center text-orange-900 text-opacity-90 hover:text-opacity-100 transition duration-300 ease-in-out transform hover:scale-105">
+                <div 
+                    class="border-2 border-yellow-600 bg-yellow-300 rounded-md mx-3 p-2 text-center text-orange-900 text-opacity-90 transition duration-300 ease-in-out shadow-lg transform hover:shadow-orange-800 hover:scale-105"
+                >
                     Created a full-stack application to monitor and control thousands of Power Converters at CERN,
                     leveraging interactive data visualization to enhance operational efficiency and user experience.
                 </div>
                 <div
-                    class="border-2 border-yellow-600 bg-yellow-300 rounded-md mx-3 p-2 text-center text-orange-900 text-opacity-90 hover:text-opacity-100 transition duration-300 ease-in-out transform hover:scale-105">
+                    class="border-2 border-yellow-600 bg-yellow-300 rounded-md mx-3 p-2 text-center text-orange-900 text-opacity-90 transition duration-300 ease-in-out shadow-lg transform hover:shadow-orange-800 hover:scale-105"
+                >
                     Created a data storage engine for Power Converter Acquisition logs at CERN, allowing for real-time data analysis or
                     historical data retrieval.
                 </div>
