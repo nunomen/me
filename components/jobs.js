@@ -7,7 +7,13 @@ export const jobs = [
         location: "Grenchen, Switzerland",
         url: "https://breitling.com",
         imageUrl: "breitling.png",
-        tasks: []
+        tasks: [
+            {
+                title: "",
+                description: "Working on the new e-commerce platform for Breitling, a Swiss luxury watchmaker, using the latest technologies to provide a seamless shopping experience for customers.",
+                technologies: ["React", "Next.js", "GraphQL", "Saleor", "FastAPI"]
+            }
+        ]
     },
     {
         title: "Senior Software Engineer",
