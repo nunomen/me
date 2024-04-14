@@ -73,7 +73,7 @@
 
         <div class="flex justify-center items-center gap-5 pt-4">
             <!-- GitHub -->
-            <a href="https://github.com/littlebrat" target="_blank" rel="noopener noreferrer" class="group">
+            <a href="https://github.com/nunomen" target="_blank" rel="noopener noreferrer" class="group">
                 <svg class="w-8 h-8 text-gray-300 group-hover:text-white transition duration-300 ease-in-out"
                     fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path

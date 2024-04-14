@@ -18,7 +18,7 @@ const sections = [
         items: [
             { link: 'mailto:nuno.men@outlook.com', title: 'Email', icon: 'fa-solid fa-envelope' },
             { link: 'https://www.linkedin.com/in/nuno-laurent', title: 'LinkedIn', icon: 'fa-brands fa-linkedin' },
-            { link: 'https://github.com/littlebrat', title: 'GitHub', icon: 'fa-brands fa-github' },
+            { link: 'https://github.com/nunomen', title: 'GitHub', icon: 'fa-brands fa-github' },
         ],
     }
 ];
