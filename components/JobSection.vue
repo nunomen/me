@@ -41,7 +41,7 @@ const config = useRuntimeConfig()
 const formatDate = (date: string): string => {
     console
     if (date === null) return 'Present';
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const options = { year: 'numeric', month: 'long' };
     const formattedDate = new Date(date).toLocaleDateString('en-US', options);
     return formattedDate;
 };
@@ -66,7 +66,7 @@ const formatDate = (date: string): string => {
             <div v-for="(task, index) in tasks" :key="index" class="pt-4">
                 <h4 class="text-lg font-medium text-white">{{ task.title }}</h4>
                 <p class="text-gray-300 text-justify">{{ task.description }}</p>
-                <div class="flex flex-wrap gap-2 mt-2">
+                <div class="flex flex-wrap gap-2 pt-3">
                     <span v-for="(technology, index) in task.technologies" :key="index"
                         class="bg-purple-700 text-purple-200 text-xs font-semibold px-2.5 py-0.5 rounded">
                         {{ technology }}
