@@ -8,7 +8,7 @@ export const projects = [
     },
     {
         title: "SocRob Robotics Team",
-        description: "Competed in RoboCup 2016 in Leipzig and European Robotics League 2016 in Lisbon and was in charge of a robotic arm for manipulation tasks.",
+        description: "Competed in RoboCup 2016 in Leipzig and European Robotics League 2016 in Lisbon. In charge of a robotic arm for manipulation tasks.",
         technologies: ["Python", "ROS", "Moveit"],
         mediaType: 'image',
         mediaLink: "socrob.jpeg"
