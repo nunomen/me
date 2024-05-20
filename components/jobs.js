@@ -11,7 +11,7 @@ export const jobs = [
             {
                 title: "",
                 description: "Working on the new e-commerce platform for Breitling, a Swiss luxury watchmaker, using the latest technologies to provide a seamless shopping experience for customers.",
-                technologies: ["React", "Next.js", "GraphQL", "Saleor", "FastAPI"]
+                technologies: ["React", "Next.js", "GraphQL", "Saleor", "FastAPI", "Algolia", "Adyen", "Contentful", "AWS"]
             }
         ]
     },
