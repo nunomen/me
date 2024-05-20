@@ -61,17 +61,17 @@
 
         <div class="flex justify-center items-center flex-col gap-3">
             <NuxtLink to="/jobs"
-                class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded transform hover:-translate-y-1 transition duration-300 ease-in-out shadow hover:shadow-md">
+                class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded transform hover:-translate-y-1 transition duration-300 ease-in-out shadow hover:shadow-md w-80 text-center">
                 💼 View my work experience
             </NuxtLink>
 
             <NuxtLink to="/projects"
-                class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transform hover:-translate-y-1 transition duration-300 ease-in-out shadow hover:shadow-md">
+                class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transform hover:-translate-y-1 transition duration-300 ease-in-out shadow hover:shadow-md w-80 text-center">
                 🛠️ Check out some of my projects
             </NuxtLink>
 
             <a href="resume.pdf" download
-                class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transform hover:-translate-y-1 transition duration-300 ease-in-out shadow hover:shadow-md">
+                class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transform hover:-translate-y-1 transition duration-300 ease-in-out shadow hover:shadow-md w-80 text-center">
                 📄 Download my CV
             </a>
         </div>
