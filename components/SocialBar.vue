@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed top-4 right-4 z-50">
+    <div class="fixed bottom-4 right-4 z-50">
         <!-- Button to toggle popover -->
         <button @click="togglePopover"
             class="bg-gray-900 text-white p-3 rounded-full shadow-purple-700 shadow-lg hover:bg-purple-700 transition-colors"

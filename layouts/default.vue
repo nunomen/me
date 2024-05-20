@@ -7,8 +7,8 @@ const { y } = useWindowScroll();
 <template>
     <div class="grid grid-cols-[auto_1fr] gap-0">
         <SideBar />
-        <SocialBar />
         <SpaceBackground>
+            <SocialBar />
             <TypeWriter
                 words="Hey  👋  I'm Nuno!"
                 class="pt-6"
