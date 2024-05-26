@@ -14,7 +14,7 @@ const { y } = useWindowScroll();
             />
             <!-- <PersonalAvatar /> -->
             <ScrollBarCircle :scroll="y" />
-            <div class="pt-8 pb-20">
+            <div class="pt-5 pb-20">
                 <slot />
             </div>
             <SocialBar />
