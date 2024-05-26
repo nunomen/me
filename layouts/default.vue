@@ -8,15 +8,15 @@ const { y } = useWindowScroll();
 <template>
         <SpaceBackground>
             <NavBar/>
-            <SocialBar />
             <TypeWriter
                 words="Hey  👋  I'm Nuno!"
-                class="pt-6"
+                class="pt-20"
             />
             <!-- <PersonalAvatar /> -->
             <ScrollBarCircle :scroll="y" />
-            <div class="pt-8">
+            <div class="pt-8 pb-20">
                 <slot />
             </div>
+            <SocialBar />
         </SpaceBackground>
 </template>
