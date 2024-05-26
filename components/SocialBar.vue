@@ -1,3 +1,13 @@
+<script setup>
+import { ref } from 'vue';
+
+const socialLinks = ref([
+    { link: 'mailto:nuno.men@outlook.com', title: 'Email', icon: ['fas', 'envelope'] },
+    { link: 'https://www.linkedin.com/in/nuno-laurent', title: 'LinkedIn', icon: ['fab', 'linkedin'] },
+    { link: 'https://github.com/nunomen', title: 'GitHub', icon: ['fab', 'github'] }
+]);
+</script>
+
 <template>
     <div class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
         <div id="social-popover"
@@ -12,13 +22,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-import { ref } from 'vue';
-
-const socialLinks = ref([
-    { link: 'mailto:nuno.men@outlook.com', title: 'Email', icon: ['fas', 'envelope'] },
-    { link: 'https://www.linkedin.com/in/nuno-laurent', title: 'LinkedIn', icon: ['fab', 'linkedin'] },
-    { link: 'https://github.com/nunomen', title: 'GitHub', icon: ['fab', 'github'] }
-]);
-</script>

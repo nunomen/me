@@ -1,13 +1,13 @@
 <script setup>
 import { useWindowScroll } from '@vueuse/core';
+import NavBar from '~/components/NavBar.vue';
 
 const { y } = useWindowScroll();
 </script>
 
 <template>
-    <div class="grid grid-cols-[auto_1fr] gap-0">
-        <SideBar />
         <SpaceBackground>
+            <NavBar/>
             <SocialBar />
             <TypeWriter
                 words="Hey  👋  I'm Nuno!"
@@ -19,5 +19,4 @@ const { y } = useWindowScroll();
                 <slot />
             </div>
         </SpaceBackground>
-    </div>
 </template>
