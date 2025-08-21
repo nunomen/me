@@ -1,6 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+    app: {
+        head: {
+            script: [
+                {
+                    src: 'https://scripts.simpleanalyticscdn.com/latest.js',
+                    async: true
+                }
+            ]
+        }
+    },
     modules: [
         'nuxt-primevue',
         '@vueuse/nuxt',
