@@ -1,17 +1,42 @@
 export const jobs = [
     {
-        title: "Senior Full Stack Engineer",
+        title: "Backend Team Lead",
         company: "Breitling",
-        role: "Web Commerce",
+        role: "Global E-Commerce",
         startDate: "2024-04-01",
         location: "Grenchen, Switzerland",
         url: "https://breitling.com",
         imageUrl: "breitling.png",
         tasks: [
             {
-                title: "",
-                description: "Working on the new e-commerce platform for Breitling, a Swiss luxury watchmaker, using the latest technologies to provide a seamless shopping experience for customers.",
-                technologies: ["React", "Next.js", "GraphQL", "Saleor", "FastAPI", "Algolia", "Adyen", "Contentful", "AWS"]
+                title: "Team Leadership and Platform Ownership",
+                description: "Leading a backend team of 8 developers and driving the development of Breitling's global e-commerce platform and digital presence across more than 140 countries.",
+                technologies: ["Team Leadership", "E-Commerce", "Platform Ownership", "Hiring"]
+            },
+            {
+                title: "High-Throughput Messaging",
+                description: "Designed and implemented a high-performance Azure Service Bus message processing system handling thousands of queue messages per minute.",
+                technologies: ["Azure Service Bus", "Azure", "Distributed Systems"]
+            },
+            {
+                title: "Scalable APIs and Data Layer",
+                description: "Designed and developed scalable REST and GraphQL services using Redis caching and PostgreSQL to optimize data retrieval and transaction processing.",
+                technologies: ["REST", "GraphQL", "Redis", "PostgreSQL"]
+            },
+            {
+                title: "Commerce and Enterprise Integrations",
+                description: "Led integration initiatives spanning Adyen payments, Algolia search, Salesforce, and SAP systems.",
+                technologies: ["Adyen", "Algolia", "Salesforce", "SAP"]
+            },
+            {
+                title: "Edge Migration and Cost Efficiency",
+                description: "Partnered with the engineering lead and migration team to move backend services from Akamai to Cloudflare, improving performance and reducing platform costs.",
+                technologies: ["Cloudflare", "Akamai", "Performance Optimization"]
+            },
+            {
+                title: "Recruitment and Team Growth",
+                description: "Driving recruitment for a growing backend organization while managing and mentoring developers across ongoing delivery work.",
+                technologies: ["Recruitment", "People Management", "Mentoring"]
             }
         ]
     },

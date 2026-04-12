@@ -20,9 +20,11 @@
 
             <p>🏠 Living in Nyon, Switzerland 🇨🇭</p>
 
-            <p>💼 Currently Senior Full Stack Developer at <span
+            <p>💼 Currently Backend Team Lead at <span
                     class="text-yellow-500 hover:text-yellow-300 transition duration-300 ease-in-out">Breitling</span>
                 ⏱️</p>
+
+            <p>🚀 Leading an 8-person backend team building Breitling's global e-commerce platform across 140+ countries</p>
 
             <p>🤹🏼 Proficient in:</p>
 
@@ -44,7 +46,17 @@
             </p>
 
             <div class="gap-5 flex flex-col">
-                <div 
+                <div
+                    class="border-2 border-yellow-600 bg-yellow-300 rounded-md mx-3 p-2 text-center text-orange-900 text-opacity-90 transition duration-300 ease-in-out shadow-lg transform hover:shadow-orange-800 hover:scale-110"
+                >
+                    Leading backend development for Breitling's global e-commerce platform, scaling APIs, integrations, and message-driven systems that support customers in more than 140 countries.
+                </div>
+                <div
+                    class="border-2 border-yellow-600 bg-yellow-300 rounded-md mx-3 p-2 text-center text-orange-900 text-opacity-90 transition duration-300 ease-in-out shadow-lg transform hover:shadow-orange-800 hover:scale-110"
+                >
+                    Built Scribe, a cross-platform open-source desktop app and CLI that installs skills once and makes them available across 34+ AI coding agents.
+                </div>
+                <div
                     class="border-2 border-yellow-600 bg-yellow-300 rounded-md mx-3 p-2 text-center text-orange-900 text-opacity-90 transition duration-300 ease-in-out shadow-lg transform hover:shadow-orange-800 hover:scale-110"
                 >
                     Created a full-stack application to monitor and control thousands of Power Converters at CERN,

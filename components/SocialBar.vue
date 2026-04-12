@@ -4,7 +4,7 @@ import { ref } from 'vue';
 const socialLinks = ref([
     { link: 'mailto:nuno.men@outlook.com', title: 'Email', icon: ['fas', 'envelope'] },
     { link: 'https://www.linkedin.com/in/nuno-laurent', title: 'LinkedIn', icon: ['fab', 'linkedin'] },
-    { link: 'https://github.com/nunomen', title: 'GitHub', icon: ['fab', 'github'] }
+    { link: 'https://gitlab.com/nunomen', title: 'GitLab', icon: ['fab', 'gitlab'] }
 ]);
 </script>
 

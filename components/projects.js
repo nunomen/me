@@ -1,5 +1,13 @@
 export const projects = [
     {
+        title: "Scribe",
+        description: "Built a cross-platform desktop application and CLI that installs a skill once and distributes it across 34+ AI coding agents, with a Vue 3 GUI, Go core, Wails desktop runtime, and workspace-based skill management.",
+        technologies: ["Go", "Vue 3", "Wails", "CLI", "Open Source"],
+        mediaType: 'image',
+        mediaLink: "scribe_showcase.png",
+        url: "https://github.com/usescrolls/scribe"
+    },
+    {
         title: "Hexapod Robot",
         description: "Lead a team of 10 people to build a Hexapod robot, from scratch, while having an active role in its software and hardware design. Won a 3D printer at Lisbon Maker Faire.",
         technologies: ["Python", "C++", "Arduino", "CAD Design", "3D Printing", "PCB Design"],
